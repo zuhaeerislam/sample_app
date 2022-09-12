@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
 
   def about
   end
-end
 
-#About | Ruby on Rails Tutorial Sample App
+  def faq
+  end
+end
