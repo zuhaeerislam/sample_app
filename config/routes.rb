@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get  '/signup',  to: 'users#new'
   get 'static_pages/faq'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :users
 end
