@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
   get 'static_pages/faq'
   resources :users
+  resources :microposts, only: %i[create destroy]
+  get '/microposts', to: 'static_pages#home'
 end
